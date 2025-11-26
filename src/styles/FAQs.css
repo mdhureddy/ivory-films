@@ -1,0 +1,93 @@
+/* ===============================
+   FAQ Page Styles
+   =============================== */
+
+.faq-section {
+  background-color: #f4ede5;
+  min-height: 100vh;
+  padding: 60px 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ---------- Header Section ---------- */
+.faq-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.faq-header h1 {
+  font-family: "serif";
+  font-weight: 400;
+  font-size: 2rem;
+  color: #000;
+}
+
+.faq-header p {
+  max-width: 800px;
+  margin: 20px auto 0;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ---------- FAQ Items ---------- */
+.faq-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid #d6ccc2;
+  padding: 20px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.faq-item:hover {
+  background-color: #e9dfd5;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question h5 {
+  font-family: "serif";
+  font-weight: 400;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.faq-toggle {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1;
+  transition: transform 0.3s ease;
+}
+
+/* Rotate + icon when open */
+.faq-toggle.active {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  margin-top: 15px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.95rem;
+  color: #333;
+  animation: fadeIn 0.3s ease;
+}
+
+/* ---------- Animation ---------- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

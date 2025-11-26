@@ -1,0 +1,19 @@
+body {
+  background-color: #f4ede5;
+  font-family: "Poppins", sans-serif;
+  color: #222;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #000 !important;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+footer hr {
+  border: 0.5px solid #b79b5b;
+  margin: 20px 0;
+}

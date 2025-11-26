@@ -1,0 +1,566 @@
+.photography-section {
+  background-color: #f5ede6;
+  padding: 80px 5%;
+  font-family: "Playfair Display", serif;
+  color: #000;
+}
+
+.photography-title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: 1px;
+  margin-bottom: 60px;
+}
+
+.photography-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.photography-image-left img,
+.photography-image-right img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.photography-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.8;
+}
+
+.photography-text p {
+  margin-bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .photography-layout {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .photography-title {
+    font-size: 2rem;
+  }
+}
+/* Wedding Showcase Section */
+.wedding-showcase {
+  text-align: center;
+  padding: 6rem 8%;
+  background-color: #fff;
+}
+
+.wedding-showcase h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.wedding-showcase p {
+  font-size: 1.1rem;
+  color: #444;
+  max-width: 900px;
+  margin: 0 auto 3rem;
+  line-height: 1.8;
+}
+
+.wedding-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.wedding-gallery img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 15px;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wedding-gallery img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .wedding-showcase h2 {
+    font-size: 2rem;
+  }
+
+  .wedding-gallery {
+    gap: 1rem;
+  }
+}
+.wedding-section {
+  text-align: center;
+  background-color: #fffaf5;
+  padding: 40px 0;
+}
+
+.explore-btn-container {
+  margin-bottom: 20px;
+}
+
+.explore-btn {
+  background-color: #bfa265;
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+.explore-btn:hover {
+  background-color: #a38950;
+  transition: all 0.3s ease;
+}
+
+.wedding-image-container {
+  position: relative;
+  display: inline-block;
+  max-width: 90%;
+}
+
+.wedding-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.wedding-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wedding-title {
+  color: white;
+  font-size: 4rem;
+  letter-spacing: 5px;
+  font-family: "Playfair Display", serif;
+}
+
+.icon-buttons {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.icon-btn {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.icon-btn:hover {
+  opacity: 1;
+}
+.featured-section {
+  text-align: center;
+  background-color: #f5eee6;
+  padding: 60px 0;
+}
+
+.featured-heading {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  color: #000;
+  margin-bottom: 40px;
+}
+
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 30px;
+  align-items: center;
+  justify-items: center;
+  padding: 0 10%;
+}
+
+.logo-item img {
+  max-width: 120px;
+  height: auto;
+  filter: grayscale(100%);
+  opacity: 0.85;
+  transition: all 0.3s ease;
+}
+
+.logo-item img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.featured-subtitle {
+  margin-top: 50px;
+  font-size: 2rem;
+  font-family: "Playfair Display", serif;
+  color: #000;
+}
+.testimonials-section {
+  background-color: #f4ede4;
+  padding: 80px 5%;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+}
+
+.testimonials-title {
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+  color: #000;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  justify-content: center;
+}
+
+.testimonial-card {
+  background-color: #fff;
+  border: 6px solid #d6c6a8;
+  border-radius: 20px;
+  padding: 25px 30px;
+  text-align: left;
+  line-height: 1.7;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  background-image: url("https://www.transparenttextures.com/patterns/whatsapp.png");
+  background-size: cover;
+}
+
+.testimonial-name {
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #000;
+}
+
+.testimonial-message {
+  font-family: "Inter", sans-serif;
+  color: #222;
+  font-size: 1rem;
+  white-space: pre-line;
+}
+.contact-banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=1920&q=80"); /* replace with your photo */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.contact-content {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  max-width: 800px;
+  padding: 0 20px;
+  z-index: 2;
+}
+
+.contact-content h1 {
+  font-size: 3rem;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 20px;
+}
+
+.contact-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #f1f1f1;
+  margin-bottom: 30px;
+}
+
+.contact-btn {
+  background-color: #c2a45e;
+  color: white;
+  border: none;
+  padding: 14px 40px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #b1934b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .contact-content p {
+    font-size: 1rem;
+  }
+
+  .contact-btn {
+    padding: 12px 30px;
+  }
+}
+.contact-banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://ivoryfilms.in/public/assets/img/thankyou.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end; /* Move content to bottom */
+  justify-content: flex-end; /* Move content to right */
+  padding: 80px;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* ====== Content Box ====== */
+.contact-content {
+  position: relative;
+  color: #fff;
+  max-width: 650px;
+  text-align: right;
+  z-index: 2;
+  opacity: 0;
+  animation: fadeInUp 1.5s ease-out forwards;
+}
+
+/* Fade-in + slide-up animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contact-content h1 {
+  font-size: 3.2rem;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 20px;
+  line-height: 1.3;
+  letter-spacing: 0.5px;
+  animation: fadeInUp 1.5s ease-out forwards;
+}
+
+.contact-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #f1f1f1;
+  margin-bottom: 40px;
+  animation: fadeInUp 2s ease-out forwards;
+}
+
+.contact-btn {
+  background-color: #c2a45e;
+  color: white;
+  border: none;
+  padding: 14px 45px;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  animation: fadeInUp 2.5s ease-out forwards;
+}
+
+.contact-btn:hover {
+  background-color: #b1934b;
+  transform: scale(1.05);
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 768px) {
+  .contact-banner {
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+  }
+
+  .contact-content {
+    text-align: center;
+  }
+
+  .contact-content h1 {
+    font-size: 2.3rem;
+  }
+
+  .contact-content p {
+    font-size: 1rem;
+  }
+
+  .contact-btn {
+    padding: 12px 30px;
+  }
+}
+.contact-btn {
+  text-decoration: none;
+  display: inline-block;
+}
+.carousel-section {
+  width: 100%;
+  margin: 60px auto;
+  /* max-width: 1200px; */
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.carousel-section img {
+  height :100vh;
+  object-fit: cover;
+  width: 100%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+.wedding-showcase {
+  background: linear-gradient(135deg, #fff4e6 0%, #ffe8f0 100%);
+  text-align: center;
+  padding: 80px 40px;
+  border-radius: 10px;
+}
+
+.wedding-showcase h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.wedding-showcase p {
+  color: #555;
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+}
+
+.wedding-video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 per row */
+  gap: 40px;
+  justify-items: center;
+  align-items: center;
+}
+
+.wedding-video-item {
+  width: 100%;
+  max-width: 750px; /* ⬆ Increased from 600px */
+  height: 420px; /* Fixed height for uniform look */
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wedding-video-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .wedding-video-item {
+    max-width: 600px;
+    height: 360px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wedding-video-grid {
+    grid-template-columns: 1fr; /* stack videos on mobile */
+  }
+
+  .wedding-video-item {
+    max-width: 100%;
+    height: 280px;
+  }
+}
+.wedding-showcase {
+  background: linear-gradient(135deg, #fff4e6 0%, #ffe8f0 100%);
+  text-align: center;
+  padding: 80px 40px;
+  border-radius: 10px;
+}
+
+.wedding-showcase h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.wedding-showcase p {
+  color: #555;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* 🎯 Centered Button */
+.explore-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.explore-btn {
+  display: inline-block;
+  padding: 14px 38px;
+  background: linear-gradient(#b49e64);
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: 600;
+  border-radius: 35px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(227, 125, 25, 0.4);
+}
+
+.explore-btn:hover {
+  transform: scale(1.08);
+  background: linear-gradient(#b49e64);
+  box-shadow: 0 8px 25px rgba(227, 125, 25, 0.6);
+}
+
